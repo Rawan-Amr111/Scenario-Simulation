@@ -17,7 +17,7 @@ Experience the simulator live here:
 * **Side-by-Side Comparison:** Select multiple scenarios to compare wait times, utilization rates, and queue lengths in a dedicated comparison view.
 * **Intelligent Visualization:** * **Utilization Bars:** Color-coded progress bars that shift from green to red as system stress increases.
     * **Infinite Scrolling:** Smooth UI performance when managing a large library of saved scenarios.
-* **Fully Responsive:** A clean, modern dashboard optimized for both desktop and mobile devices using **Tailwind CSS**.
+
 
 ---
 
