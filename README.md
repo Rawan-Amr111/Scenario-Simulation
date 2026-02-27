@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 Experience the simulator live here:  
-**[🔗 View Live Deployment](INSERT_YOUR_DEPLOYMENT_LINK_HERE)**
+**[🔗 View Live Deployment](https://scenario-simulation.vercel.app/)**
 
 ---
 
