@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 QueueMaster: Interactive Queueing Theory Simulator
 
-## Getting Started
+**QueueMaster** is a powerful web-based analytical tool designed to simulate and analyze stochastic arrival and service processes. Built with **Next.js**, it allows users to model complex queueing systems, visualize performance metrics, and make data-driven decisions through scenario comparison.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Live Demo
+Experience the simulator live here:  
+**[🔗 View Live Deployment](INSERT_YOUR_DEPLOYMENT_LINK_HERE)**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Dynamic Scenario Modeling:** Input parameters like Arrival Rate ($\lambda$), Service Rate ($\mu$), and Number of Servers ($s$) to see real-time system behavior.
+* **Persistent Storage:** Automatically saves your simulations to `localStorage`, allowing you to revisit your data anytime without a backend.
+* **Side-by-Side Comparison:** Select multiple scenarios to compare wait times, utilization rates, and queue lengths in a dedicated comparison view.
+* **Intelligent Visualization:** * **Utilization Bars:** Color-coded progress bars that shift from green to red as system stress increases.
+    * **Infinite Scrolling:** Smooth UI performance when managing a large library of saved scenarios.
+* **Fully Responsive:** A clean, modern dashboard optimized for both desktop and mobile devices using **Tailwind CSS**.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Technical Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Framework:** [Next.js 14/15](https://nextjs.org/) (App Router)
+* **Language:** [TypeScript](https://www.typescriptlang.org/) (Strict type safety for mathematical results)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Icons:** [Lucide React](https://lucide.dev/)
+* **State Management:** React Hooks (`useState`, `useEffect`) with synchronized Client-side storage.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📐 Mathematical Foundation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The application calculates core performance measures based on standard **Queueing Theory** models (e.g., $M/M/s$):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **System Utilization ($\rho$):** $$\rho = \frac{\lambda}{s \cdot \mu}$$
+    *Where $\lambda$ is the arrival rate, $\mu$ is the service rate, and $s$ is the number of servers.*
+* **Average Wait Time ($W_q$):** The expected time a customer spends waiting in the queue before service begins.
+
+---
+
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/queuemaster.git](https://github.com/your-username/queuemaster.git)
